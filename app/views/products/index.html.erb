@@ -1,6 +1,8 @@
 <h2>Produtos</h2>
 <hr>
 
+<%= link_to 'Adicionar produto',  new_product_path %>
+
 <% @products.each do |product| %>
     <div class="product">
         <h2><%= product.title %></h2>
