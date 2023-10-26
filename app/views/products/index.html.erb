@@ -3,10 +3,4 @@
 
 <%= link_to 'Adicionar produto',  new_product_path %>
 
-<% @products.each do |product| %>
-    <div class="product">
-        <h2><%= product.title %></h2>
-        <p><%= product.price %></p>
-        <%= link_to 'Visualziar', product_path(product.id) %>
-    </div>
-<% end %>
+<%= render partial: 'product', collection: @products %>

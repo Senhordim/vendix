@@ -2,13 +2,15 @@
 
 <h3 class="description"><%= @product.description %></h3>
 
+<%= image_tag @product.photo, width: 200 if @product.photo.attached? %>
+
 <p class="price"><%= @product.price %></p>
 
 <%= link_to 'Voltar', products_path %>
 
 <%= link_to 'Editar', edit_product_path(@product.id) %>
 
-<%= link_to 'Excluir', delete_product_path(@product.id), data: {
+<%= link_to 'Excluir', product_path(@product.id), data: {
     turbo_method: :delete,
     turbo_confirm: 'Tem certeza que deseja excluir?'
 } %>
