@@ -1,0 +1,43 @@
+pt-BR:
+  activerecord:
+    models:
+      product: 'Produto'
+    attributes:
+      product:
+        title: 'Título'
+        description: 'Descrição'
+        price: 'Preço'
+        photo: 'Imagem'
+        created_at: 'Criado em'
+        updated_at: 'Atualizado em'
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: 'não pode ficar em branco'
+            description:
+              blank: 'não pode ficar em branco'
+            price:
+              blank: 'não pode ficar em branco'
+              not_a_number: 'não é um número'
+              greater_than: 'deve ser maior que 0'
+            photo:
+              blank: 'não pode ficar em branco'
+  common:
+    confirm: 'Tem certeza que deseja excluir?'
+  products:
+    edit:
+      title: 'Editar Produto'
+    new:
+      title: 'Novo Produto'
+    show:
+      title: 'Detalhes do Produto'
+    index:
+      title: 'Produtos'
+    create:
+      created: 'Produto criado com sucesso'
+    update:
+      updated: 'Produto atualizado com sucesso'
+    destroy:
+      destroyed: 'Produto excluído com sucesso'

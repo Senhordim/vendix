@@ -1,3 +1,9 @@
+<%= link_to 'Voltar', products_path %>
+
+<h2><%= t('.title') %></h2>
+
+<hr>
+
 <h2 class="title"><%= @product.title %></h2>
 
 <h3 class="description"><%= @product.description %></h3>
@@ -6,11 +12,10 @@
 
 <p class="price"><%= @product.price %></p>
 
-<%= link_to 'Voltar', products_path %>
 
 <%= link_to 'Editar', edit_product_path(@product.id) %>
 
 <%= link_to 'Excluir', product_path(@product.id), data: {
     turbo_method: :delete,
-    turbo_confirm: 'Tem certeza que deseja excluir?'
+    turbo_confirm: t('common.confirm')
 } %>
