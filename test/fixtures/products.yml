@@ -4,8 +4,16 @@ ps4:
   title: PS4 Fat
   description: PS4 em bom estado
   price: 1300
+  category: videogames
 
 xbox360:
   title: xbox360
   description: xbox360 em bom estado
   price: 900
+  category: videogames
+
+macbook:
+  title: MacBook M2
+  description: Macbook M2 16GB
+  price: 3200
+  category: computers

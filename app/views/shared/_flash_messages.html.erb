@@ -1,2 +1,2 @@
 
-<%= alert || notice %>
+<%= alert || notice && notice["created"] || notice && notice["destroyed"] %>

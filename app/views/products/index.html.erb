@@ -1,6 +1,6 @@
 <h2><%= t('.title') %></h2>
 <hr>
 
-<%= link_to 'Adicionar produto',  new_product_path %>
+<%= link_to t('products.new.title'),  new_product_path %>
 
 <%= render partial: 'product', collection: @products %>

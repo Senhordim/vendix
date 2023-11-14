@@ -13,9 +13,9 @@
 <p class="price"><%= @product.price %></p>
 
 
-<%= link_to 'Editar', edit_product_path(@product.id) %>
+<%= link_to t('.edit'), edit_product_path(@product.id) %>
 
-<%= link_to 'Excluir', product_path(@product.id), data: {
+<%= link_to t('.destroy'), product_path(@product.id), data: {
     turbo_method: :delete,
     turbo_confirm: t('common.confirm')
 } %>

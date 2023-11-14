@@ -10,6 +10,12 @@ en:
         photo: 'Image'
         created_at: 'Created at'
         updated_at: 'Updated at'
+      category:
+        title: 'Category'
+        name: 'Name'
+        created_at: 'Created at'
+        updated_at: 'Updated at'
+
     errors:
       models:
         product:
@@ -26,6 +32,7 @@ en:
               blank: 'image cannot be left blank'
   common:
     confirm: 'Are you sure you want to delete?'
+    back: 'Back'
   products:
     edit:
       title: 'Edit Product'
@@ -41,4 +48,19 @@ en:
       updated: 'Product updated successfully'
     destroy:
       destroyed: 'Product successfully deleted'
+  categories:
+    edit:
+      title: 'Edit Category'
+    new:
+      title: 'New Category'
+    show:
+      title: 'Category Details'
+    index:
+      title: 'Categories'
+    create:
+      created: 'Category created successfully'
+    update:
+      updated: 'Category updated successfully'
+    destroy:
+      destroyed: 'Category successfully deleted'
 

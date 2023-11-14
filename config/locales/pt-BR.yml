@@ -10,6 +10,11 @@ pt-BR:
         photo: 'Imagem'
         created_at: 'Criado em'
         updated_at: 'Atualizado em'
+        category: 'Categoria'
+      category:
+        name: 'Nome'
+        created_at: 'Criado em'
+        updated_at: 'Atualizado em'
     errors:
       models:
         product:
@@ -24,8 +29,13 @@ pt-BR:
               greater_than: 'deve ser maior que 0'
             photo:
               blank: 'não pode ficar em branco'
+        category:
+          attributes:
+            name:
+              blank: 'não pode ficar em branco'
   common:
     confirm: 'Tem certeza que deseja excluir?'
+    back: 'Voltar'
   products:
     edit:
       title: 'Editar Produto'
@@ -41,3 +51,25 @@ pt-BR:
       updated: 'Produto atualizado com sucesso'
     destroy:
       destroyed: 'Produto excluído com sucesso'
+  categories:
+    category:
+      title: 'Categoria'
+      edit: 'Editar'
+      create: 'Criar'
+    edit:
+      title: 'Editar Categoria'
+    new:
+      title: 'Nova Categoria'
+    show:
+      title: 'Detalhes da Categoria'
+    index:
+      title: 'Categorias'
+      new: 'Nova Categoria'
+    create:
+      title: 'Criar Categoria'
+      created: 'Categoria criada com sucesso'
+    update:
+      updated: 'Categoria atualizada com sucesso'
+    destroy:
+      title: 'Excluir Categoria'
+      destroyed: 'Categoria excluída com sucesso'

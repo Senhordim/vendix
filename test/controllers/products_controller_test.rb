@@ -4,7 +4,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test 'render a list all products' do
     get products_path
     assert_response :success
-    assert_select '.product', 2
+    assert_select '.product', 3
   end
 
   test 'render a detailed product page' do
@@ -26,7 +26,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
       product: {
         title: 'OCulos 3D',
         description: 'em perfeito estado',
-        price: 500
+        price: 500,
+        category_id: categories(:videogames).id
       }
     }
 
@@ -34,14 +35,13 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_equal flash[:notice], 'Product was successfully created.'
   end
 
-
-
   test 'Does not allow to create a new product with empty fields' do
     post products_path, params: {
       product: {
         title: '',
         description: 'em perfeito estado',
-        price: 500
+        price: 500,
+        category_id: categories(:videogames).id
       }
     }
 
