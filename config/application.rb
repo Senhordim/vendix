@@ -27,6 +27,10 @@ module Vendix
     # Avaliable languages
     config.i18n.available_locales = %i[en pt-BR]
 
+    # Language by default
     config.i18n.default_locale = :'pt-BR'
+
+    # multiple queries per request
+    config.active_record.async_query_executor = :global_thread_pool
   end
 end

@@ -42,6 +42,7 @@ en:
       title: 'Product Details'
     index:
       title: 'Products'
+      all: 'All Products'
     create:
       created: 'Product created successfully'
     update:

@@ -44,7 +44,9 @@ pt-BR:
     show:
       title: 'Detalhes do Produto'
     index:
+      new: 'Novo Produto'
       title: 'Produtos'
+      all: 'Todos'
     create:
       created: 'Produto criado com sucesso'
     update:
