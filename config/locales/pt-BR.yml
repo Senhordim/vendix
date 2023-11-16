@@ -47,6 +47,9 @@ pt-BR:
       new: 'Novo Produto'
       title: 'Produtos'
       all: 'Todos'
+      min_price: 'Preço mínimo'
+      max_price: 'Preço máximo'
+      search_text: 'Pesquisar'
     create:
       created: 'Produto criado com sucesso'
     update:
