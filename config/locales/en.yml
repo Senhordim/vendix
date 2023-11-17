@@ -45,6 +45,10 @@ en:
       all: 'All Products'
       min_price: 'min price'
       max_price: 'max price'
+      search_text: 'Search'
+      expansive: 'Expensive first'
+      cheapest: 'Cheapest first'
+      newest: 'Newest first'
     create:
       created: 'Product created successfully'
     update:

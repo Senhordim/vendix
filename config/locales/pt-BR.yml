@@ -50,6 +50,9 @@ pt-BR:
       min_price: 'Preço mínimo'
       max_price: 'Preço máximo'
       search_text: 'Pesquisar'
+      expansive: 'Maior preço'
+      cheapest: 'Menor preço'
+      newest: 'Mais recente'
     create:
       created: 'Produto criado com sucesso'
     update:
