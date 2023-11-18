@@ -3,7 +3,7 @@
 
 <%= link_to t('.new'),  new_product_path %>
 
-<%= turbo_frame_tag 'categories' do %>
+<%= turbo_frame_tag 'home' do %>
 
     <ul>
         <li> <%= link_to t('.all'), products_path %> </li>
@@ -18,6 +18,8 @@
             onChange: 'this.form.requestSubmit()'
         } %>
     <% end %>
-
-    <%= render partial: 'product', collection: @products %>
+    <%= turbo_frame_tag "products-#{@pagy.page}", class: 'products' do %>
+        <%= render partial: 'product', collection: @products %>
+        <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products', src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
+    <% end %>
 <% end %>

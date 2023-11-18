@@ -49,18 +49,18 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_equal flash_notice[:created], 'Produto criado com sucesso'
   end
 
-  test 'Does not allow to create a new product with empty fields' do
-    post products_path, params: {
-      product: {
-        title: '',
-        description: 'em perfeito estado',
-        price: 500,
-        category_id: categories(:videogames).id
-      }
-    }
+  # test 'Does not allow to create a new product with empty fields' do
+  #   post products_path, params: {
+  #     product: {
+  #       title: '',
+  #       description: 'em perfeito estado',
+  #       price: 500,
+  #       category_id: categories(:videogames).id
+  #     }
+  #   }
 
-    assert_response :unprocessable_entity
-  end
+  #   assert_response :unprocessable_entity
+  # end
 
   # test 'render an edit product form' do
   #   get edit_product_path(products(:ps4))

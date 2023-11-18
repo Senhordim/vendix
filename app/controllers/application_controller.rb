@@ -1,4 +1,9 @@
+# frozen_string_literal: true
+
+# ApplicationController
 class ApplicationController < ActionController::Base
+  include Pagy::Backend
+
   around_action :switch_locale
 
   def switch_locale(&action)

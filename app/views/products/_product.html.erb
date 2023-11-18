@@ -1,7 +1,5 @@
+<h2><%= product.title %></h2>
+<p><%= product.price %></p>
+<p><%= image_tag product.photo, width: 200 if product.photo.attached? %></p>
+<%= link_to 'Visualziar', product_path(product.id), 'data-turbo-frame': '_top' %>
 
-    <div class="product">
-        <h2><%= product.title %></h2>
-        <p><%= product.price %></p>
-        <p><%= image_tag product.photo, width: 200 if product.photo.attached? %></p>
-        <%= link_to 'Visualziar', product_path(product.id), 'data-turbo-frame': '_top' %>
-    </div>
